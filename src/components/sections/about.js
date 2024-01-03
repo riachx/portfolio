@@ -155,8 +155,8 @@ const About = () => {
   }, []);
 
   const skills = ['JavaScript', 'C/C++', 'React', 'Three.js', 'Blender', 'Figma', 'Python', 'WebGL', 'Photoshop'];
-  const classes = ['CSE130: Principles of Computer Systems Design', 'CSE120: Computer Architecture', 'CSE101: Data Structures & Algorithms', 'CSE13S: Computer Systems and C Programming', 'CSE12: Computer Systems and Assembly Language', 'CSE30: Programming Abstrations'];
-
+  {/*const classes = ['CSE130: Principles of Computer Systems Design', 'CSE120: Computer Architecture', 'CSE101: Data Structures & Algorithms', 'CSE13S: Computer Systems and C Programming', 'CSE12: Computer Systems and Assembly Language', 'CSE30: Programming Abstrations'];
+*/}
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">🎨 About Me</h2>
