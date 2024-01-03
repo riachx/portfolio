@@ -5,7 +5,7 @@ module.exports = {
     title: 'Ria',
     description:
       'Ria is a junior studying computer science at UC Santa Cruz. She enjoys finding intersections between programming and design.',
-    siteUrl: 'https://designbyria.com', // No trailing slash allowed!
+    siteUrl: 'https://riachx.github.io/portfolio', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@',
   },
