@@ -93,12 +93,8 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm a programmer and 3D/2D artist exploring intersections between computer science and design as a third-year at UC Santa Cruz. 
-        Currently the Design Director at {' '}  
-        <a href="https://cruzhacks.com/" target="_blank" rel="noreferrer">
-          CruzHacks
-        </a>
-        . 🌱 💻
+        I'm a programmer and 3D/2D artist exploring intersections between computer science and design as a fourth-year at UC Santa Cruz. 
+        Currently a 3D Scripter at a Stealth Startup. 🌱 💻
         
       </p>
       
