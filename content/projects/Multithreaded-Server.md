@@ -2,7 +2,7 @@
 date: '2023-05-27'
 title: 'Multithreaded HTTP Server'
 github: 'https://github.com/riachx/multi-thread-server'
-external: ''
+external: 'https://github.com/riachx/multi-thread-server'
 tech:
   - C
   - Locks
