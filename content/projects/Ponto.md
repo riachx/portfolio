@@ -2,7 +2,7 @@
 date: '2018-11-12'
 title: '3D Visualizer for Ponto Cove'
 github: ''
-external: ''
+external: 'https://designbyria.com/#gallery'
 tech:
   - 3ds Max
   - Vray
