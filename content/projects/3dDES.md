@@ -1,8 +1,6 @@
 ---
 date: '2017-10-08'
 title: 'VR Game - Asset Development'
-github: ''
-external: ''
 tech:
   - 3ds Max
   - Photoshop
