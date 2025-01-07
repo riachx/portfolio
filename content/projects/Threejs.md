@@ -2,7 +2,6 @@
 date: '2023-05-01'
 title: 'Three.js Scrolling Webpage'
 github: 'https://github.com/riachx/scrollable-glass-page'
-external: ''
 tech:
   - Three.js
   - HTML/CSS
