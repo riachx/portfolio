@@ -2,7 +2,7 @@
 date: '2024-06-05'
 title: '3D Lowpoly Interior Design Program'
 github: 'https://github.com/riachx/3d-room-designer'
-external: 'riachx.github.io/3d-room-designer/'
+external: 'https://riachx.github.io/3d-room-designer/'
 tech:
   - ThreeJS
   - Postprocessing
