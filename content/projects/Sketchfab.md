@@ -12,4 +12,4 @@ tech:
 company: 'Sketchfab'
 showInProjects: false
 ---
-Sharing my original 3D works to [Sketchfab](https://sketchfab.com/riach) - a platform to discover, buy and sell 3D, VR/AR content. 30k+ impressions.
+Sharing my original 3D works to [Sketchfab](https://sketchfab.com/riach) - a platform to discover, buy and sell 3D, VR/AR content. 40k+ impressions.
