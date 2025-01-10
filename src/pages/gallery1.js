@@ -1,9 +1,11 @@
-import React, { useRef, useEffect, useLayoutEffect } from 'react';
+import React, { useRef, useEffect, useLayoutEffect, useState } from 'react';
 import Gallery from 'react-photo-gallery';
 import styled from 'styled-components';
 
+import { useLocation } from '@reach/router';
 import '../styles/GlobalStyle';
 import Nav from './Nav';
+
 
 const PageContainer = styled.div`
   
@@ -23,6 +25,38 @@ const GalleryContainer = styled.div`
     filter: brightness(110%);
   }
   
+`;
+
+const LoaderContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a192f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+`;
+
+const Loader = styled.div`
+  border: 4px solid #64ffda; /* Light border */
+  border-top: 4px solid #0a192f; /* Dark border */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 3s linear infinite;
+  z-index:100;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;
 
 const HeaderContainer = styled.div`
@@ -84,8 +118,6 @@ const HeaderContainerSmaller = styled.div`
     }
   }
 `;
-
-
 
 const photos1 = [
   {
@@ -274,6 +306,12 @@ const photos5 = [
 ];
 
 const Gallery1 = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  //const [isLoading, setIsLoading] = useState(true);
+   //const location = useLocation();
+   ///const isGallery = location.pathname === '/gallery1/#section1';
+   //const [isLoading, setIsLoading] = useState(isGallery);
+  // location
 
   const marginValue = -17;
   
@@ -294,18 +332,36 @@ const Gallery1 = () => {
           sectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }, 100); // Adjust this delay as needed
       }
+      setIsLoading(false);
     };
+
+    const delay = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // 1.5 seconds
+
 
     window.addEventListener('load', handleImageLoad);
 
+    
+
     return () => {
+      clearTimeout(delay);
+      console.log("done");
       window.removeEventListener('load', handleImageLoad);
     };
   }, [sectionRefs]);
 
+   
+
 
   return (
+    
     <PageContainer>
+    {isLoading && (
+        <LoaderContainer>
+          <Loader />
+        </LoaderContainer>
+      )}
       <Nav></Nav>
       <Section1 ref={sectionRefs.section1} id="section1">
       <HeaderContainer >
@@ -349,8 +405,7 @@ const Gallery1 = () => {
       <GalleryContainer>
         <Gallery photos={photos5} backgroundColor={"black"} margin={marginValue} direction="column" columns={2} />
       </GalleryContainer>
-
-
+      
       </PageContainer>
 
   );
