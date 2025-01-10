@@ -27,37 +27,6 @@ const GalleryContainer = styled.div`
   
 `;
 
-const LoaderContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0a192f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-`;
-
-const Loader = styled.div`
-  border: 4px solid #64ffda; /* Light border */
-  border-top: 4px solid #0a192f; /* Dark border */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 3s linear infinite;
-  z-index:100;
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-`;
 
 const HeaderContainer = styled.div`
   display:flex;
@@ -357,11 +326,7 @@ const Gallery1 = () => {
   return (
     
     <PageContainer>
-    {isLoading && (
-        <LoaderContainer>
-          <Loader />
-        </LoaderContainer>
-      )}
+    
       <Nav></Nav>
       <Section1 ref={sectionRefs.section1} id="section1">
       <HeaderContainer >
