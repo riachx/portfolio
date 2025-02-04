@@ -60,7 +60,7 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-       I am currently looking for internships in the design and programming realm.
+       I am currently looking for opportunities in the design and programming realm.
         Whether you have a question or just want to say hi, I'd love to connect!
       </p>
 
