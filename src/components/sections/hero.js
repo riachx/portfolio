@@ -94,7 +94,7 @@ const Hero = () => {
     <>
       <p>
         I'm a programmer and 3D/2D artist exploring intersections between computer science and design as a fourth-year at UC Santa Cruz. 
-        Currently a 3D Scripter at a Stealth Startup. 🌱 💻
+        Currently a 3D Scripter at Motif. 🌱 💻
         
       </p>
       
