@@ -170,7 +170,7 @@ const About = () => {
 
             <p>
            I've had the chance to intern as a web developer for Streetline Inc. and {' '}<a href="https://tech4good.soe.ucsc.edu/#/">Tech4Good</a>, 
-            intern as a 3D scripter for {' '}<a href="https://cyark.org">CyArk</a>, create websites like {' '}<a href="https://spcwby.com">Spcwby.com</a>, and work as a 3D modeler for a range of companies and startups, including <a href="https://www.virbela.com/">Virbela</a> and <a href="https://play.google.com/store/apps/details?id=com.augmio.App&hl=en_US&gl=US ">Augmio</a>.
+            intern as a 3D scripter for {' '}<a href="https://cyark.org">CyArk</a>, create websites like {' '}<a href="https://spcwby.com">Spcwby.com</a>, and work as a 3D modeler for a range of companies and startups, including <a href="https://www.virbela.com/">Virbela</a> and <a href="https://motif.io/">Motif</a>.
                </p>
         <p>I'm currently finishing up my fourth-year as a computer science student at UC Santa Cruz.
             </p>
