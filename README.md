@@ -1,6 +1,6 @@
-# Ria's Portfolio - 2024
+# Ria's Portfolio - 2025
 
-Portfolio for my work up to 2024.
+Portfolio for my work up to 2025.
 
 ![Desktop View](https://i.imgur.com/qtg2w1C.jpg)
 ## Uses
