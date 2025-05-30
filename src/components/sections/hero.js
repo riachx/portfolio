@@ -53,6 +53,24 @@ const StyledHeroSection = styled.section`
 }
 `;
 
+const PillsContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+`;
+
+const Pill = styled.div`
+  background-color: var(--navy);
+  color: var(--green);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: var(--fz-xs);
+  font-family: var(--font-mono);
+  border: 0.8px solid var(--green);
+  transition: var(--transition);
+
+`;
 
 const Hero = () => {
   
@@ -67,7 +85,7 @@ const Hero = () => {
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
-  const colors = ['#df5367', '#e63ba3', '#b25bd6', '#4dd0e3']; // Array of colors
+  const colors = ['#df5367', '#e63ba3', '#ffa44a', '#4dd0e3']; // Array of colors
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Ria Chockalingam.</h2>;
@@ -77,10 +95,10 @@ const Hero = () => {
     <Typewriter
       options={{
         strings: [
-          '<span style="color: ' + colors[0] + '">programmer.</span>',
-          '<span style="color: ' + colors[1] + '">3D artist.</span>',
+          '<span style="color: ' + colors[0] + '">front-end developer.</span>',
+          '<span style="color: ' + colors[1] + '">UI/UX designer.</span>',
           '<span style="color: ' + colors[2] + '">web developer.</span>',
-          '<span style="color: ' + colors[3] + '">3D Scripter.</span>',
+          '<span style="color: ' + colors[3] + '">3D designer.</span>',
         ],
         autoStart: true,
         loop: true,
@@ -93,14 +111,23 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm a programmer and 3D/2D artist exploring intersections between computer science and design as a fourth-year at UC Santa Cruz. 
-        Currently a 3D Scripter at Motif. 🌱 💻
+       I build at the intersection of code and design - developing interfaces that look as good as they function.
         
+        Graduating from UC Santa Cruz with a Computer Science B.S. in June 2025 🌱 💻
       </p>
       
     </>
   );
   const five = (
+    <PillsContainer>
+      <Pill>Front-end</Pill>
+      <Pill>UI/UX</Pill>
+      <Pill>3D Design</Pill>
+    </PillsContainer>
+  );
+  
+
+  const six = (
     <a
       className="email-link"
       href="/#contact"
@@ -109,7 +136,7 @@ const Hero = () => {
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, three, four, five, six];
 
   return (
     
