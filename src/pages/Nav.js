@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import '../styles/GlobalStyle'; // Assuming this import has a purpose
 
 const Navbar = styled.nav`
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  z-index: 1000; /* Adjust z-index as needed to ensure it appears above other content */
+  z-index: 1000;
   background-color: #0a192f;
   padding: 40px 30px;
-  margin: -8px;
-  width: 100%;
-  height:20px;
+  margin: 0;
+  height: 20px;
   border-bottom: solid 1px #64ffda;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   /* Add other styles as needed */
 `;
 
@@ -54,7 +54,7 @@ const Nav = () => {
       <Navbar>
         <NavList>
           <NavItem>
-            <NavLink href="\#gallery">&lt; Go Back</NavLink>
+            <NavLink href="/#gallery">&lt; Go Back</NavLink>
           </NavItem>
           {/* Add more navbar links as needed */}
         </NavList>

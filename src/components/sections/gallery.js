@@ -135,24 +135,29 @@ const BlackBackground = styled.div`
 const Gallery = () => {
 
 
-const images = [
-        {
-          path: 'https://i.imgur.com/Ds5lJ6E.png',
-          hoverText: '520 WEST 28TH ST >',
-        },
-        {
-          path: 'https://i.imgur.com/VxIkekU.png',
-          hoverText: 'ARCHITECTURE >',
-        },
-        {
-          path: 'https://i.imgur.com/TVcIMwN.png',
-          hoverText: 'MISCEALLENOUS >',
-        },
-        {
-          path: 'https://i.imgur.com/pNwuCMO.png',
-          hoverText: 'OBJECTS >',
-        },
-      ];
+  const images = [
+    {
+      path: 'https://i.imgur.com/Ds5lJ6E.png',
+      hoverText: '520 WEST 28TH ST >',
+      section: 'zaha'
+    },
+    {
+      path: 'https://i.imgur.com/VxIkekU.png',
+      hoverText: 'ARCHITECTURE >',
+      section: 'architecture'
+    },
+    {
+      path: 'https://i.imgur.com/TVcIMwN.png',
+      hoverText: 'MISCEALLENOUS >',
+      section: 'misc'
+    },
+    {
+      path: 'https://i.imgur.com/pNwuCMO.png',
+      hoverText: 'OBJECTS >',
+      section: 'objects'
+    },
+  ];
+  
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -171,21 +176,20 @@ const images = [
       <h2 className="title">A Visual 3D Gallery</h2>
 
       <p className="gallery-body">
-       Check out some of the 3D projects I've amassed over the past 8 years! 
+        Check out some of the 3D projects I've amassed over the past 8 years! 
       </p>
         
       <ImageGrid>
-      {images.map((image, index) => (
-        <ImageContainer key={index}>
-          <a href ={`/gallery1/#section${index + 1}`}>
-            <img src={image.path} alt={`Image ${index + 1}`} />
-            <Overlay className="overlay" />
-            <HoverText className="hover-text">{image.hoverText}</HoverText>
-          </a>
-        </ImageContainer>
-      ))}
-    </ImageGrid>
-
+        {images.map((image, index) => (
+          <ImageContainer key={index}>
+            <a href={`/gallery1/#${image.section}`}>
+              <img src={image.path} alt={`Image ${index + 1}`} />
+              <Overlay className="overlay" />
+              <HoverText className="hover-text">{image.hoverText}</HoverText>
+            </a>
+          </ImageContainer>
+        ))}
+      </ImageGrid>
     </StyledContactSection>
   );
 };
