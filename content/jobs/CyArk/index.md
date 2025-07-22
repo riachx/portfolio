@@ -1,6 +1,6 @@
 ---
 date: '2023-09-21'
-title: '3D Scripting Intern'
+title: '3D Workflow Automation Intern'
 company: 'CyArk'
 location: 'San Diego, CA'
 range: 'MAY - AUG 2023'
