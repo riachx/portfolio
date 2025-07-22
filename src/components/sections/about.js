@@ -165,14 +165,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi! My name is Ria and I enjoy anything development and design related. An initial interest in sculpting funky characters in Blender kickstarted 7+ years of 3D, Front-end, and UI/UX experience. 
+              Hi! My name is Ria and I enjoy anything development and design related. 7+ years of 3D, Front-end, and UI/UX experience. 
             </p>
             
             <p>
             I've had the chance to intern as a Front-end Developer for Streetline Inc. and {' '}<a href="https://tech4good.soe.ucsc.edu/#/">Tech4Good</a>, 
-            work as a Synthetic Data Engineer for {' '}<a href="https://www.motif.io">Motif</a>, create 3D websites like {' '}<a href="https://spcwby.com">Spcwby.com</a>, and work as a 3D modeler for a range of companies and startups, including <a href="https://www.virbela.com/">Virbela</a> and <a href="https://play.google.com/store/apps/details?id=com.augmio.App&hl=en_US&gl=US ">Augmio</a>.
+            work as a Software Engineer for {' '}<a href="https://www.motif.io">Motif</a>, create 3D websites like {' '}<a href="https://spcwby.com">Spcwby.com</a>, and work as a 3D modeler for a range of companies and startups, including <a href="https://www.virbela.com/">Virbela</a> and <a href="https://play.google.com/store/apps/details?id=com.augmio.App&hl=en_US&gl=US ">Augmio</a>.
             </p>
-        <p>I'm currently finishing up my fourth-year as a Computer Science student at UC Santa Cruz.
+        <p>Recent Computer Science graduate from UC Santa Cruz looking for opportunities worldwide.
             </p>
             <p>Some languages and tools I use include:</p>
           </div>
